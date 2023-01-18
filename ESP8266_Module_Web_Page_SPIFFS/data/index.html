@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIS IoT Solutions</title>
+    </head>
+<body>
+    <form name="setting" action="/sendData" method="post" class="form-container">
+        <fieldset>
+            <legend>OWNER</legend>
+            <label>Name of owner of the device </label><br><br>
+            <input type="text" name="user" class="data" maxlength="50" size="52" value="%owner%" id="ownerid">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>WIFI Setting</legend>
+            <p>Please enter SSID and password for a certain network to make the device can access to it.</p>
+            <label>SSID</label> 
+            <input type="text" name="ssid" class="data" maxlength="50" size="52" value="%ssid%" id="sside">
+            <br><br>
+            <label>Password</label>
+            <input type="password" name="pass" class="data" maxlength="50" size="52" id="pass" value="%password%">
+        </fieldset>
+        <br>
+        <input type="submit" value="Save" class="buttonSave">
+    </form>
+</body>
+</html>
+
